@@ -19,7 +19,7 @@ function Navigation() {
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
-            <img src={logo} style={{ width: 50, height: 50 }} />
+            <img src={logo} style={{ width: 50, height: 50 }} alt="not found"/>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Brand href="#home"></Navbar.Brand>
@@ -47,6 +47,7 @@ function Navigation() {
                         objectFit: "cover",
                         borderRadius: "50%",
                       }}
+                      alt="not found"
                     />
                     {user.name}
                   </>
