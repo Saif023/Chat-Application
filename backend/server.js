@@ -3,6 +3,7 @@ const app = express();
 const userRoutes = require("./routes/userRoutes");
 const User = require("./models/User");
 const Message = require("./models/Message");
+
 const rooms = [
   "General Discussion",
   "Hobby and Interests",
@@ -24,7 +25,7 @@ const server = require("http").createServer(app);
 const PORT = 5001;
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chat-application-oy3c.onrender.com",
     methods: ["GET", "POST"],
   },
 });
