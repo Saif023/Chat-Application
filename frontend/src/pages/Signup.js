@@ -72,6 +72,7 @@ function Signup() {
               <img
                 src={imagePreview || botImg}
                 className="signup-profile-pic"
+                alt="not found"  
               />
               <label htmlFor="image-upload" className="image-upload-label">
                 <i className="fas fa-plus-circle add-picture-icon"></i>
